@@ -1,0 +1,208 @@
+body {
+  font-family: monospace;
+  background: #fff;
+  color: #000;
+}
+
+/* navbar */
+.navbar {
+  background: #fff;
+  border-bottom: 1px #000 solid;
+}
+
+.navbar img {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  border: 1px #000 solid;
+  color: #000;
+}
+
+/* info icons */
+.cart-info__icon {
+  color: #000;
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.2rem solid #000;
+  color: #000;
+  border-radius: 0.25rem;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+}
+
+.cart-info:hover {
+  background: green;
+  border-color: green;
+  color: #fff;
+}
+
+.cart-info:hover .cart-info__icon {
+  color: #fff;
+}
+
+/* banner */
+/*green linear gradient used for the header*/
+:root {
+  --greenTrans: rgba(124, 252, 0, 0.7);
+}
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--greenTrans), var(--greenTrans)),
+    url("../img/veganbg3.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+
+.banner {
+  color: #000;
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: #000;
+  font-size: 4rem;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  color: #000;
+  border: 0.2rem solid #000;
+}
+
+.banner-link:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* shopping cart  */
+.cart {
+  position: fixed;
+  min-height: 10rem;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  background: rgba(240, 255, 0, 1);
+  width: 0;
+  overflow: auto;
+}
+
+.show-cart {
+  width: 24rem;
+  padding: 3rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* cart items remove, price etc */
+.cart-item-remove {
+  color: #000;
+  transition: all 1s ease-in-out;
+}
+
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+#cart-item-price {
+  font-size: 0.8rem;
+}
+
+/* cart buttons, checkout, clear cart */
+.btn-white {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-black {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-black:hover {
+  color: #fff !important;
+  background: #000 !important;
+}
+
+.btn-white:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* about section */
+.about-img__container {
+  position: relative;
+}
+
+#about p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: normal;
+}
+
+/* store items */
+.store {
+  background: var(--mainGrey);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  transition: all 3s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: yellow;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+  color: blue;
+}
+
+.store-item-value {
+  color: #fff;
+}
+
+.search-box {
+  background: #fff;
+  color: #000;
+}
