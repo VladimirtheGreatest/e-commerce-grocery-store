@@ -1,2 +1,2 @@
 # e-commerce-grocery-store
-E-commerce grocery store including shopping cart, shopping list, basic menu and store layout. (built with HTML, CSS and JavaScript.)
+E-commerce grocery store including shopping cart, shopping list, basic menu and store layout. (built with HTML, CSS and JavaScript.) E-commerce store will provide customers option to choose from the range of vegan products. Chosen products will be added to the shopping cart in the top right corner. Shopping cart will be revealed as a dropdown side-menu. Customer will be able to see chosen products and modify the cart by adding more or deleting. Once decided to purchase, customer will be able to check-out and finish his shopping by proceeding to the payment page.
