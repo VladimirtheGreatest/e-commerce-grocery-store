@@ -6,6 +6,7 @@
 
   cartInfo.addEventListener('click', function() {
     cart.classList.toggle('show-cart');
+    document.getElementById('addedItem').style.visibility = ('hidden');
   });
 })();
 
@@ -24,7 +25,7 @@
         let pos = fullPath.indexOf('img') + 3;
         let partPath = fullPath.slice(pos);
 
-        const item = {}; //item is an object which will be added to the shopping cart
+        var item = {}; //item is an object which will be added to the shopping cart
         item.img = `img-cart${partPath}`; //path of the image from the partPath, adding small version of the image to the shopping cart
         let name = event.target.parentElement.parentElement.nextElementSibling.children[0].children[0].textContent; //getting name from the content on the page
         item.name = name; // name of the image generated from the last variable
@@ -37,7 +38,7 @@
         //  console.log(item);
 
 //this will add html content into the shopping cart
-        const cartItem = document.createElement('div');
+        var cartItem = document.createElement('div');
         cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3');
 
         cartItem.innerHTML = `
@@ -59,28 +60,36 @@ const cart = document.getElementById('cart');
 const total = document.querySelector('.cart-total-container');
 
 cart.insertBefore(cartItem, total);
-alert('item added to the cart'); // item added to the cart message
+document.getElementById('addedItem').style.visibility = ('visible');
+alert('item added to the cart');
 showTotals()
-
-      }
+}
+document.getElementById('clear-cart').addEventListener("click", function(){    //clear cart function, this will clear all items from the shopping cart
+  cartItem.innerHTML = ``;
+  finalMoney = 0;
+  document.getElementById('cart-total').textContent = finalMoney;
+  document.querySelector('.item-total').textContent = finalMoney;
+  document.getElementById('item-count').textContent = 0;
+  console.log(item);
+});
     });
   });
 
 //total function
 function showTotals(){
 
-  const total = [];   //empty array to store the selected items from the customer
-  const items = document.querySelectorAll('.cart-item-price');
+  var total = [];   //empty array to store the selected items from the customer
+  var items = document.querySelectorAll('.cart-item-price');
 
   items.forEach(function(item){
     total.push(parseFloat(item.textContent));   //changing text string to the float number so we can calculate the total
   });
 
-  const totalMoney = total.reduce(function(total, item){
+  var totalMoney = total.reduce(function(total, item){
     total +=item;
     return total;
   },0)
-  const finalMoney = totalMoney.toFixed(2);
+  var finalMoney = totalMoney.toFixed(2);
 
 document.getElementById('cart-total').textContent = finalMoney;
 document.querySelector('.item-total').textContent = finalMoney;
@@ -88,3 +97,4 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
