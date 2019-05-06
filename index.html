@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <title>Vegan Food store</title>
   <style>
   </style>
@@ -40,6 +41,10 @@
             <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
             <p class="mb-0">+ 07979797979</p>
           </div>
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5" id=addedItem>
+            <span class="info-icon mx-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0">+ 1</p>
+          </div>
           <!-- items and total -->
           <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
             <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
@@ -53,7 +58,7 @@
     <div class="container-fluid">
       <div class="row max-height justify-content-center align-items-center">
         <div class="col-10 mx-auto banner text-center">
-          <h1 class="text-capitalize">welcome to <strong class="banner-title ">VEEEGAN</strong></h1>
+          <h1 class="text-capitalize"><strong class="banner-title ">welcome to VEEEGAN</strong></h1>
           <a href="#store" class="btn banner-link text-uppercase my-2">Check this out</a>
 
         </div>
@@ -65,7 +70,7 @@
           </div>
           <!-- total and check out buttons -->
           <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+            <button id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</button>
             <a href="#" class="btn btn-outline-secondary text-uppercase btn-white">checkout</a>
           </div>
         </div>
@@ -355,3 +360,4 @@
 </body>
 
 </html>
+
