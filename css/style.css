@@ -58,13 +58,6 @@ body {
   color: #fff;
 }
 
-#addedItem{
-  visibility: hidden;
-  background-color: red;
-}
-
-
-
 /* banner */
 /*green linear gradient used for the header*/
 :root {
@@ -72,7 +65,7 @@ body {
 }
 
 .max-height {
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh);
   background: linear-gradient(var(--greenTrans), var(--greenTrans)),
     url("../img/veganbg2.jpg") center/cover fixed no-repeat;
   position: relative;
@@ -215,4 +208,15 @@ body {
   background: #fff;
   color: #000;
 }
+
+/*footer*/
+
+#links a{
+  text-decoration: none;
+  color: green;
+}
+#links a:hover{
+  font-weight: bolder;
+}
+
 
