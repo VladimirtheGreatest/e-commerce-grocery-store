@@ -11,8 +11,8 @@ body {
 }
 
 .navbar img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .navbar-toggler {
@@ -31,7 +31,9 @@ body {
 
 .nav-link:hover {
   border: 1px #000 solid;
-  color: #000;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #b8c11c;
 }
 
 /* info icons */
@@ -46,11 +48,10 @@ body {
   border-radius: 0.25rem;
   padding: 0.6rem 0.8rem;
   cursor: pointer;
+  background: #b8c11c;
 }
 
 .cart-info:hover {
-  background: green;
-  border-color: green;
   color: #fff;
 }
 
@@ -86,20 +87,24 @@ body {
   font-size: 1.5rem;
   color: #000;
   border: 0.2rem solid #000;
+  background: #b8c11c;
+
 }
 
 .banner-link:hover {
-  background: #fff;
-  color: #000;
+  color: #fff;
 }
 
 /* shopping cart  */
+
+#imghidden{
+  visibility: hidden;
+}
 .cart {
   position: fixed;
   min-height: 10rem;
-  background: #fff;
   transition: all 0.3s ease-in-out;
-  background: rgba(240, 255, 0, 1);
+  background: #fff;
   width: 0;
   overflow: auto;
 }
@@ -109,6 +114,7 @@ body {
   height: 100%;
   padding: 3rem 1.5rem;
   transform: rotateY(-360deg);
+  border-right: 1px solid #000;
 }
 
 .cart-item {
@@ -132,34 +138,57 @@ body {
 
 /* cart buttons, checkout, clear cart */
 .btn-white {
-  color: #000 !important;
-  border-color: #000 !important;
+  color: #000 ;
+  background: #fff;
+  border-color: #000 ;
 }
 
 .btn-black {
-  color: #000 !important;
-  border-color: #000 !important;
+  color: #000;
+  border-color: #000;
+}
+
+#clear-cart{
+  background: #fff;
+  color: #000;
+}
+
+#clear-cart:hover{
+  background: red;
+  color: #fff;
+  font-weight: bolder;
 }
 
 .btn-black:hover {
   color: #fff !important;
-  background: #000 !important;
+  background: #b8c11c;
 }
 
 .btn-white:hover {
-  background: #fff !important;
-  color: #000 !important;
+  font-weight: bolder;
+  background: green;
+  color: #fff;
 }
 
 /* about section */
+
+#about{
+  background: #b8c11c;
+}
+
 .about-img__container {
   position: relative;
 }
 
 #about p {
-  font-size: 18px;
+  font-size: 24px;
   text-align: justify;
   line-height: normal;
+}
+
+#about img{
+  width: 600px;
+  height: 600px;
 }
 
 /* store items */
@@ -211,12 +240,19 @@ body {
 
 /*footer*/
 
+footer{
+  background: #b8c11c;
+  color: #000;
+}
+
 #links a{
   text-decoration: none;
   color: green;
 }
 #links a:hover{
   font-weight: bolder;
+  color: #fff;
 }
+
 
 
