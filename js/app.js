@@ -1,4 +1,4 @@
-//this will show the shopping Cart
+///this will show the shopping Cart
 
 (function() {
   const cartInfo = document.getElementById('cart-info');
@@ -6,7 +6,6 @@
 
   cartInfo.addEventListener('click', function() {
     cart.classList.toggle('show-cart');
-    document.getElementById('addedItem').style.visibility = ('hidden');
   });
 })();
 
@@ -60,7 +59,6 @@ const cart = document.getElementById('cart');
 const total = document.querySelector('.cart-total-container');
 
 cart.insertBefore(cartItem, total);
-document.getElementById('addedItem').style.visibility = ('visible');
 alert('item added to the cart');
 showTotals()
 }
@@ -72,6 +70,7 @@ document.getElementById('clear-cart').addEventListener("click", function(){    /
   document.getElementById('item-count').textContent = 0;
   console.log(item);
 });
+//delete one item function to do
     });
   });
 
@@ -97,4 +96,5 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
 
