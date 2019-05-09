@@ -39,7 +39,7 @@
           <!-- phone number -->
           <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
             <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
-            <p class="mb-0">+ 07979797979</p>
+            <p class="mb-0"><strong>+ 07979797979</strong></p>
           </div>
           <!-- items and total -->
           <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
@@ -69,6 +69,7 @@
             <button id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</button>
             <a href="#" class="btn btn-outline-secondary text-uppercase btn-white">checkout</a>
           </div>
+          <img src="img/veganbg.jpg" class="img-fluid" id=imghidden alt="">
         </div>
       </div>
     </div>
@@ -77,26 +78,32 @@
 
   <!-- about us section -->
   <section class="about py-5" id="about">
-    <div class="container">
+    <div class="container-fluid">
+      <div class="row" id=description>
+        <div class="col-4 text-center">
+          <h2>Animal friendly</h2>
+          <i class="fas fa-paw fa-3x"></i>
+        </div>
+        <div class="col-4 text-center">
+          <h2>1 Day delivery</h2>
+            <i class="fas fa-truck fa-3x"></i>
+        </div>
+        <div class="col-4 text-center">
+          <h2>Affordable price</h2>
+          <i class="fas fa-hand-holding-usd fa-3x"></i>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-10 mx-auto col-md-6 my-5">
-          <h1 class="text-capitalize">about <strong class="banner-title ">VEEEGAN</strong></h1>
+        <div class="col-12 mx-auto col-md-6 my-5 text-center">
+          <h1 class="text-capitalize text-center">about <strong class="banner-title ">VEEEGAN</strong></h1>
           <p>Veeeegan is the UK’s independent retailer of vegan products online.
             At the forefront of the vegan revolution since 2000, shipping the best in vegan products around the world from all across the UK to Australia, America and the Far East.
             Our aim is keep that number 1 spot by bringing you the best and newest vegan products from our network of partners around the globe. </p>
           <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
-
-        </div>
-        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
-          <div class="about-img__container">
-            <img src="img/veganbg.jpg" class="img-fluid" alt="">
-          </div>
         </div>
       </div>
     </div>
   </section>
-
-    <hr>
 
 
   <!-- products -->
@@ -347,8 +354,6 @@
 
       </div>
   </section>
-
-    <hr>
   <!--end of products -->
 
   <!-- Footer -->
