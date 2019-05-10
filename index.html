@@ -59,16 +59,18 @@
 
         </div>
         <div id="cart" class="cart fixed-top">
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <button id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</button>
+            <button id="checkout" class="btn btn-outline-secondary text-uppercase btn-white">checkout</button>
+          </div>
           <!-- cart total -->
-          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+
+          <div id=cartdiv class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
             <h5>total</h5>
             <h5> £ <strong id="cart-total" class="font-weight-bold">0</strong> </h5>
           </div>
+            <h3 id=imghidden class="text-center">Thanks for your shopping, you will soon receive confirmation e-mail with your order!</h3>
           <!-- total and check out buttons -->
-          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-            <button id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</button>
-            <a href="#" class="btn btn-outline-secondary text-uppercase btn-white">checkout</a>
-          </div>
           <img src="img/veganbg.jpg" class="img-fluid" id=imghidden alt="">
         </div>
       </div>
@@ -79,6 +81,14 @@
   <!-- about us section -->
   <section class="about py-5" id="about">
     <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mx-auto col-md-6 my-5 text-center">
+          <h1 class="text-capitalize text-center">about <strong class="banner-title ">VEEEGAN</strong></h1>
+          <p>Veeeegan is the UK’s independent retailer of vegan products online. </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+        </div>
+      </div>
+      </div>
       <div class="row" id=description>
         <div class="col-4 text-center">
           <h2>Animal friendly</h2>
@@ -91,15 +101,6 @@
         <div class="col-4 text-center">
           <h2>Affordable price</h2>
           <i class="fas fa-hand-holding-usd fa-3x"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 mx-auto col-md-6 my-5 text-center">
-          <h1 class="text-capitalize text-center">about <strong class="banner-title ">VEEEGAN</strong></h1>
-          <p>Veeeegan is the UK’s independent retailer of vegan products online.
-            At the forefront of the vegan revolution since 2000, shipping the best in vegan products around the world from all across the UK to Australia, America and the Far East.
-            Our aim is keep that number 1 spot by bringing you the best and newest vegan products from our network of partners around the globe. </p>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
         </div>
       </div>
     </div>
@@ -494,5 +495,6 @@
 </body>
 
 </html>
+
 
 
