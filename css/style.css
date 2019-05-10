@@ -116,6 +116,10 @@ body {
   transform: rotateY(-360deg);
   border-right: 1px solid #000;
 }
+#cartdiv{
+  position: relative;
+  top: 0;
+}
 
 .cart-item {
   transition: all 2s ease-in-out;
@@ -184,11 +188,6 @@ body {
   font-size: 24px;
   text-align: justify;
   line-height: normal;
-}
-
-#about img{
-  width: 600px;
-  height: 600px;
 }
 
 /* store items */
