@@ -1,4 +1,4 @@
-///this will show the shopping Cart
+//this will show the shopping Cart
 
 (function() {
   const cartInfo = document.getElementById('cart-info');
@@ -20,6 +20,7 @@
       //console.log(event.target);
 
       if (event.target.parentElement.classList.contains('store-item-icon')) {
+        document.getElementById('imghidden').style.visibility = 'hidden';
         let fullPath = event.target.parentElement.previousElementSibling.src;
         let pos = fullPath.indexOf('img') + 3;
         let partPath = fullPath.slice(pos);
@@ -70,6 +71,10 @@ document.getElementById('clear-cart').addEventListener("click", function(){    /
   document.getElementById('item-count').textContent = 0;
   console.log(item);
 });
+document.getElementById('checkout').addEventListener("click", function(){    //checkout funtion
+  document.getElementById('imghidden').style.visibility = 'visible';
+  cartItem.innerHTML = ``;
+});
 //delete one item function to do
     });
   });
@@ -96,5 +101,6 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
 
 
