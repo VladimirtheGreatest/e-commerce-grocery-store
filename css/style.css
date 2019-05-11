@@ -1,13 +1,22 @@
 body {
-  font-family: monospace;
+  font-family: Verdana;
   background: #fff;
   color: #000;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* navbar */
 .navbar {
-  background: #fff;
-  border-bottom: 1px #000 solid;
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fa-leaf {
+  color: #228B22;
 }
 
 .navbar img {
@@ -48,7 +57,7 @@ body {
   border-radius: 0.25rem;
   padding: 0.6rem 0.8rem;
   cursor: pointer;
-  background: #b8c11c;
+  background:#32CD32;
 }
 
 .cart-info:hover {
@@ -78,17 +87,11 @@ body {
   margin-top: -4rem;
 }
 
-.banner-title {
-  color: #000;
-  font-size: 4rem;
-}
-
 .banner-link {
   font-size: 1.5rem;
   color: #000;
   border: 0.2rem solid #000;
-  background: #b8c11c;
-
+  background:#32CD32;
 }
 
 .banner-link:hover {
@@ -103,8 +106,10 @@ body {
 .cart {
   position: fixed;
   min-height: 10rem;
-  transition: all 0.3s ease-in-out;
-  background: #fff;
+  transition: all 0.6s ease-in-out;
+  background: #F7971E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 0;
   overflow: auto;
 }
@@ -113,7 +118,7 @@ body {
   width: 24rem;
   height: 100%;
   padding: 3rem 1.5rem;
-  transform: rotateY(-360deg);
+  transform: skewY(0deg);
   border-right: 1px solid #000;
 }
 #cartdiv{
@@ -165,7 +170,7 @@ body {
 
 .btn-black:hover {
   color: #fff !important;
-  background: #b8c11c;
+  background:#32CD32;
 }
 
 .btn-white:hover {
@@ -177,7 +182,9 @@ body {
 /* about section */
 
 #about{
-  background: #b8c11c;
+  background:#32CD32;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .about-img__container {
@@ -192,7 +199,9 @@ body {
 
 /* store items */
 .store {
-  background: var(--mainGrey);
+  background:#228B22;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .img-container {
@@ -214,7 +223,7 @@ body {
   bottom: 0;
   right: 0;
   padding: 0.75rem;
-  background: yellow;
+  background:#32CD32;
   border-top-left-radius: 1rem;
   transition: all 1s ease-in-out;
   transform: translate(100%, 100%);
@@ -240,7 +249,7 @@ body {
 /*footer*/
 
 footer{
-  background: #b8c11c;
+  background:#32CD32;
   color: #000;
 }
 
@@ -252,6 +261,16 @@ footer{
   font-weight: bolder;
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  #description h2{
+    font-size: 18px;
+  }
+  .banner-link{
+    font-size: 13px;
+  }
+}
+
 
 
 
