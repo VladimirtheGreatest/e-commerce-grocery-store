@@ -49,9 +49,7 @@
     <span>£</span>
     <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span>
   </div>
-  <a href="#" id='cart-item-remove' class="cart-item-remove">
-    <i class="fas fa-trash"></i>
-  </a>
+    <i id='cart-item-remove' class="fas fa-trash cart-item-remove"></i>
 </div>
 `;
 
@@ -71,13 +69,17 @@ document.getElementById('clear-cart').addEventListener("click", function(){    /
   document.getElementById('item-count').textContent = 0;
   console.log(item);
 });
-document.getElementById('checkout').addEventListener("click", function(){    //checkout funtion
+document.getElementById('checkout').addEventListener("click", function(){    //checkout function
   document.getElementById('imghidden').style.visibility = 'visible';
   cartItem.innerHTML = ``;
 });
-//delete one item function to do
+$(".cart-item-remove").click(function(){   //delete individual item function
+    $(this).parent().remove();
+    showTotals()
+});
     });
   });
+
 
 //total function
 function showTotals(){
@@ -101,6 +103,7 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
 
 
 
