@@ -3,8 +3,12 @@
 (function() {
   const cartInfo = document.getElementById('cart-info');
   const cart = document.getElementById('cart');
+  const windowclose = document.getElementById('windowclose');
 
   cartInfo.addEventListener('click', function() {
+    cart.classList.toggle('show-cart');
+  });
+  windowclose.addEventListener('click', function() {   //this will close the shopping cart
     cart.classList.toggle('show-cart');
   });
 })();
@@ -39,7 +43,7 @@
 
 //this will add html content into the shopping cart
         var cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3');
+        cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3', 'text-center');
 
         cartItem.innerHTML = `
   <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
@@ -103,6 +107,7 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
 
 
 
