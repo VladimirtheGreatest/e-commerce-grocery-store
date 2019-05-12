@@ -20,6 +20,11 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg fixed-top px-4">
       <a class="navbar-brand" href="#"><i class="fas fa-leaf fa-3x"></i></a>
+      <!-- items and total -->
+      <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+        <p class="mb-0 text-capitalize"><span id="item-count">0</span> items - £<span class="item-total">0.00</span></p>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
         <span class="toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
@@ -41,11 +46,6 @@
             <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
             <p class="mb-0"><strong>+ 07979797979</strong></p>
           </div>
-          <!-- items and total -->
-          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
-            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
-            <p class="mb-0 text-capitalize"><span id="item-count">0</span> items - £<span class="item-total">0.00</span></p>
-          </div>
         </div>
       </div>
     </nav>
@@ -54,10 +54,11 @@
     <div class="container-fluid">
       <div class="row max-height justify-content-center align-items-center">
         <div class="col-10 mx-auto banner text-center">
-          <a href="#store" class="btn banner-link text-uppercase my-2 text-center">Welcome :) Click here to visit our vegan heaven</a>
+          <a href="#store" class="btn banner-link text-uppercase my-2 text-center">Welcome! Enter the heaven</a>
 
         </div>
         <div id="cart" class="cart fixed-top">
+          <i id=windowclose class="fas fa-window-close fa-2x"></i>
           <div class="cart-buttons-container mt-3 d-flex justify-content-between">
             <button id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</button>
             <button id="checkout" class="btn btn-outline-secondary text-uppercase btn-white">checkout</button>
@@ -98,7 +99,7 @@
             <i class="fas fa-truck fa-3x"></i>
         </div>
         <div class="col-4 text-center">
-          <h2>Affordable price</h2>
+          <h2>Save money</h2>
           <i class="fas fa-hand-holding-usd fa-3x"></i>
         </div>
       </div>
@@ -112,11 +113,11 @@
       <!--filter buttons -->
       <div class="row">
         <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="All products">All products</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="Dairy alternatives">Dairy alternatives</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="Desserts">Desserts</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="Ready meals">Ready meals</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="Vegan snacks">Vegan snacks</a>
+          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="All products">All products</a>
+          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Dairy alternatives">Dairy alternatives</a>
+          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Desserts">Desserts</a>
+          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Ready meals">Ready meals</a>
+          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Vegan snacks">Vegan snacks</a>
         </div>
       </div>
       <!-- search box -->
@@ -136,17 +137,17 @@
       </div>
       <!-- store  items-->
       <div class="row" class="store-items" id="store-items">
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan1.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Carrot Noodles</h5>
+                <h5 id="store-item-name">Veeegan salad</h5>
                 <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">7</strong></h5>
               </div>
             </div>
@@ -154,12 +155,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan2.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -172,12 +173,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan3.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -190,12 +191,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item doughnuts" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan4.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -208,12 +209,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan5.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -226,12 +227,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan6.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -244,12 +245,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan7.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -262,17 +263,17 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan8.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Lentil soup</h5>
+                <h5 id="store-item-name">Double burger</h5>
                 <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">4</strong></h5>
               </div>
             </div>
@@ -280,17 +281,17 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan5.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Super burger</h5>
+                <h5 id="store-item-name">Super cake</h5>
                 <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
               </div>
             </div>
@@ -298,17 +299,17 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan10.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Hummus</h5>
+                <h5 id="store-item-name">Hummus bread</h5>
                 <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
               </div>
             </div>
@@ -316,12 +317,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan11.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -334,12 +335,12 @@
         </div>
 
         <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item" data-item="Ready meals">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item" data-item="Ready meals">
           <div class="card ">
             <div class="img-container">
               <img src="img/vegan12.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">add</i>
               </span>
             </div>
             <div class="card-body">
@@ -494,6 +495,7 @@
 </body>
 
 </html>
+
 
 
 
