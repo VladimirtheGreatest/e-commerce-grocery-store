@@ -74,8 +74,14 @@ document.getElementById('clear-cart').addEventListener("click", function(){    /
   console.log(item);
 });
 document.getElementById('checkout').addEventListener("click", function(){    //checkout function
-  document.getElementById('imghidden').style.visibility = 'visible';
-  cartItem.innerHTML = ``;
+   var total = document.querySelector('#item-count').textContent;
+  if (total != 0) {
+    document.getElementById('imghidden').style.visibility = 'visible';
+    cartItem.innerHTML = ``;
+  } else {
+    alert('your basket is empty');
+  };
+
 });
 $(".cart-item-remove").click(function(){   //delete individual item function
     $(this).parent().remove();
@@ -107,6 +113,7 @@ document.getElementById('item-count').textContent = total.length;
 
 }
 })();
+
 
 
 
