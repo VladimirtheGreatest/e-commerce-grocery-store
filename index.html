@@ -19,11 +19,11 @@
   <header>
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg fixed-top px-4">
-      <a class="navbar-brand" href="#"><i class="fas fa-leaf fa-3x"></i></a>
+      <a class="navbar-brand" href="#"><i class="fas fa-leaf fa-3x"> Veeegan</i></a>
       <!-- items and total -->
       <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
         <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
-        <p class="mb-0 text-capitalize"><span id="item-count">0</span> items - £<span class="item-total">0.00</span></p>
+        <p class="mb-0 text-capitalize"><span id="item-count">0</span> items - £<span class="item-total">0</span></p>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
         <span class="toggler-icon"><i class="fas fa-bars"></i></span>
@@ -69,9 +69,15 @@
             <h5>total</h5>
             <h5> £ <strong id="cart-total" class="font-weight-bold">0</strong> </h5>
           </div>
-            <h3 id=imghidden class="text-center">Thanks for your shopping, you will soon receive confirmation e-mail with your order!</h3>
+          <hr>
+          <div id=imghidden class="text-center">
+            <h3>Thanks for your shopping, you will soon receive confirmation e-mail with your order!</h3>
+            <hr>
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"> </i>
+              <i class="fab fa-google-plus-g fa-2x"> </i>
+          </div>
           <!-- total and check out buttons -->
-          <img src="img/veganbg.jpg" class="img-fluid" id=imghidden alt="">
         </div>
       </div>
     </div>
@@ -85,7 +91,7 @@
         <div class="col-12 mx-auto col-md-6 my-5 text-center">
           <h1 class="text-capitalize text-center">about <strong class="banner-title ">VEEEGAN</strong></h1>
           <p class="text-center">Veeeegan is the UK’s independent retailer of vegan products online. </p>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+          <a href="#store" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
         </div>
       </div>
       </div>
@@ -113,7 +119,7 @@
       <!--filter buttons -->
       <div class="row">
         <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-          <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="All products">All products</a>
+          <a href="#store" class="btn btn-success text-uppercase filter-btn m-2" data-filter="All products">All products</a>
           <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Dairy alternatives">Dairy alternatives</a>
           <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Desserts">Desserts</a>
           <a href="#store" class="btn btn-primary text-uppercase filter-btn m-2" data-filter="Ready meals">Ready meals</a>
@@ -450,7 +456,7 @@
       <hr>
 
       <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
+      <ul id=social class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
           <a class="btn-floating btn-fb mx-1">
             <i class="fab fa-facebook-f fa-3x"> </i>
@@ -495,6 +501,7 @@
 </body>
 
 </html>
+
 
 
 
