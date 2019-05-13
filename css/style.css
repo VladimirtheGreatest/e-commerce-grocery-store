@@ -45,10 +45,7 @@ html{
 }
 
 .nav-link:hover {
-  border: 1px #000 solid;
-  border-radius: 0.25rem;
   color: #fff;
-  background: #b8c11c;
 }
 
 /* info icons */
@@ -104,6 +101,7 @@ html{
 #imghidden{
   visibility: hidden;
 }
+
 .cart {
   position: fixed;
   right: 0;
@@ -139,6 +137,10 @@ html{
   color: #fff;
 }
 
+#windowclose:hover{
+  color: #fff;
+}
+
 #cart-item-price {
   font-size: 0.8rem;
 }
@@ -171,7 +173,7 @@ html{
 }
 
 .btn-white:hover {
-  background: green;
+  background:#32CD32;
   color: #fff;
 }
 
@@ -266,6 +268,9 @@ footer{
   font-weight: bolder;
   color: #fff;
 }
+#social a:hover{
+  color: #fff;
+}
 
 @media only screen and (max-width: 600px) {
   #description h2{
@@ -281,6 +286,7 @@ footer{
     width: 20rem;
   }
 }
+
 
 
 
