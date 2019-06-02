@@ -6,12 +6,16 @@ html,body{
 }
 
 body {
-  font-family: Verdana;
+  font-family: 'Judson', serif;
   color: #000;
 }
 
 html{
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Archivo Black', sans-serif;
 }
 
 /* navbar */
@@ -255,7 +259,7 @@ html{
 /*footer*/
 
 footer{
-  background:#32CD32;
+  background:#80cd32;
   color: #000;
   width: 100vw;
 }
@@ -286,9 +290,3 @@ footer{
     width: 20rem;
   }
 }
-
-
-
-
-
-
